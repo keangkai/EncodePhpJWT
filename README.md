@@ -1,0 +1,2 @@
+# EncodePhpJWT
+encode JWT php
