@@ -5,10 +5,15 @@
         'typ' => 'JWT',
         'alg' => 'HS256'
     ];
+	$timeout = 30;
+	$timeStart = 10;
     $header = json_encode($header);
     $header = base64_encode($header);
+		
     $payload = [
         'iss' => 'test.com',
+		"iat" => 1356999524,
+    	"exp" => 1357000000,
         'username' => 'test',
         'email' => 'test@test.com'
     ];
